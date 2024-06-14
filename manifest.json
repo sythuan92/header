@@ -1,0 +1,32 @@
+{
+	"manifest_version": 2,
+	"name": "Authorization Headers Catcher",
+	"version": "2.0.2",
+	"description": "Catch Authorization headers in requests",
+	"content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+	"permissions": [
+		"<all_urls>",
+		"storage",
+		"tabs",
+		"webRequest",
+		"webRequestBlocking",
+		"activeTab",
+		"scripting"
+	],
+	"background": {
+		"service_worker": "background.js"
+	  },
+	"browser_action": {
+	  "default_popup": "popup.html",
+	  "default_icon": {
+		"16": "logo.png",
+		"48": "logo.png",
+		"128": "logo.png"
+	  }
+	},
+	"icons": {
+	  "16": "logo.png",
+	  "48": "logo.png",
+	  "128": "logo.png"
+	}
+}
